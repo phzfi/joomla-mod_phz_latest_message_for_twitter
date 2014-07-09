@@ -27,7 +27,9 @@ $document->addStyleSheet($modulePath.'tmpl/css/stylesheet.css');
         <a href="http://twitter.com/<?php echo $params->get('user_id'); ?>">
             <img class="twitter-logo" alt="twitter logo" src="<?php echo $modulePath . "tmpl/images/twitterx.png"; ?>">
         </a>
-        <p class="twitter-username">@<?php echo $params->get('user_id'); ?></p>
+        <a href="http://twitter.com/<?php echo $params->get('user_id'); ?>">
+            <p class="twitter-username">@<?php echo $params->get('user_id'); ?></p>
+        </a>
         <a class="follow" href="http://twitter.com/<?php echo $params->get('user_id'); ?>"><button><?php echo JText::_('MOD_PHZ_LATEST_MESSAGE_FOR_TWITTER_FOLLOW_US')?></button></a>
         <p class="message"><?php echo $item->text;?></p>
         <div class="name-picture">

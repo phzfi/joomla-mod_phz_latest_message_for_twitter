@@ -38,7 +38,6 @@ div.twitter {
 div.twitter p.twitter-username {
     display: inline-block;
     margin-top:0;
-    vertical-align: middle;
     margin-bottom: 20px;
 }
 
@@ -99,7 +98,7 @@ div.twitter div p.name {
     font-family: 'OpenSans-Regular', Arial, sans-serif;
     font-weight: bold;
     font-size: 13px;
-    vertical-align: top;
+    vertical-align: middle;
     color:black;
 }
 div.twitter div a p.name:hover{
