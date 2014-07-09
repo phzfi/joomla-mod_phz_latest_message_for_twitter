@@ -1,0 +1,134 @@
+@CHARSET "UTF-8";
+
+@media only screen
+and (max-width: 660px) {
+    div.twitter {
+        padding: 25px 10px 10px 10px !important;
+        text-align: center !important;
+    }
+
+    div.twitter > a{
+        float: none !important;
+        display: block !important;
+    }
+    div.twitter > p.twitter-username a{
+        font-size: 16px !important;
+    }
+
+    div.twitter p.message {
+        font-size: 16px !important;
+        line-height: normal !important;
+    }
+
+}
+
+div.twitter-container {
+    width:100%;
+    display:block;
+    background-color: #daf2fa;
+}
+
+div.twitter {
+    padding: 25px 50px 10px 50px;
+    /*height: 100%;*/
+    background-color: #daf2fa;
+    position: relative;
+}
+
+div.twitter p.twitter-username {
+    display: inline-block;
+    margin-top:0;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+div.twitter p.twitter-username a, div.twitter p.message a {
+    color: #69b2cb;
+    text-decoration: none;
+}
+
+div.twitter p.twitter-username a {
+    font-family: 'OpenSans-Regular', Arial, sans-serif;
+    font-size: 13px;
+}
+
+
+div.twitter button {
+    font-family: 'OpenSans-Regular', Arial, sans-serif;
+    color: #000000;
+    font-size: 12px;
+    background: #ffffff;
+    padding: 5px 15px 5px 15px;
+    border: solid #000000 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: auto;
+}
+
+div.twitter a button:hover
+    {
+    background: #F2F2F2;
+}
+
+div.twitter p.message {
+    text-align: left;
+    font-family: 'OpenSans-Regular', Arial, sans-serif;
+    font-size:22px;
+    line-height:30px;
+    margin: 45px 7%;
+    margin-bottom: 90px;
+    word-break: break-word;
+    min-height: 100px;
+}
+
+div.twitter > a.follow {
+    float:right;
+}
+div.twitter a {
+    text-decoration: none;
+}
+
+div.twitter div {
+    text-align:center;
+}
+
+div.twitter div p.name {
+    display:inline-block;
+    vertical-align: bottom;
+    font-family: 'OpenSans-Regular', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    vertical-align: top;
+    color:black;
+}
+div.twitter div a p.name:hover{
+    color:#69b2cb;
+}
+
+div.twitter div img.profile-picture {
+    display:inline-block;
+    -webkit-filter: grayscale(100%) invert(100%);
+    filter: grayscale(100%) invert(100%);
+    border-radius: 25px;
+    height: 50px;
+}
+
+div.twitter div.name-picture {
+    position: absolute;
+    bottom: 10px;
+    left:0;
+    width:100%;
+}
+@-moz-document url-prefix() {
+    div.twitter div.name-picture {
+        display:block;
+        bottom:inherit;
+        left:inherit;
+        position: static;
+        text-align: center;
+    }
+    div.twitter div.name-picture a {
+        display:inline;
+    }
+}

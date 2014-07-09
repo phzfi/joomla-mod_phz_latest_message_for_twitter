@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+    <name>MOD_PHZ_LATEST_MESSAGE_FOR_TWITTER</name>
+    <creationDate>2014</creationDate>
+    <author>Pharazon Ab</author>
+    <authorEmail>phz@phz.fi</authorEmail>
+    <authorUrl>http://www.phz.fi</authorUrl>
+    <version>1.0.0</version>
+    <description>MOD_PHZ_LATEST_MESSAGE_FOR_TWITTER_XML_DESCRIPTION</description>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <files>
+        <filename>mod_phz_latest_message_for_twitter.xml</filename>
+        <filename module="mod_phz_latest_message_for_twitter">mod_phz_latest_message_for_twitter.php</filename>
+        <filename>TwitterAPIExchange.php</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <folder>languages</folder>
+        <folder>tmpl/css</folder>
+        <folder>tmpl/js</folder>
+        <folder>tmpl/images</folder>
+        <filename>LICENSE.txt</filename>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB.mod_phz_latest_message_for_twitter.ini</language>
+        <language tag="en-GB">en-GB.mod_phz_latest_message_for_twitter.sys.ini</language>
+        <language tag="fi-FI">fi-FI.mod_phz_latest_message_for_twitter.ini</language>
+        <language tag="fi-FI">fi-FI.mod_phz_latest_message_for_twitter.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="oauth_access_token"
+                    type="text"
+                    required="required"
+                    label="MOD_PHZ_LATEST_MESSAGE_FOR_TWITTER_OAUTH_ACCESS_TOKEN_LABEL"
+                    description="MOD_PHZ_LATEST_MESSAGE_FOR_TWITTER_OAUTH_ACCESS_TOKEN_DESC" />
+                <field
+                    name="oauth_access_token_secret"
+                    type="text"
+                    required="required"
+                    label="MOD_PHZ_LATEST_MESSAGE_FOR_TWITTER_OAUTH_ACCESS_TOKEN_SECRET_LABEL"
+                    description="MOD_PHZ_LATEST_MESSAGE_FOR_TWITTER_OAUTH_ACCESS_TOKEN_SECRET_DESC" />
+                <field
+                    name="consumer_key"
+                    type="text"
+                    required="required"
+                    label="MOD_PHZ_LATEST_MESSAGE_FOR_TWITTER_CONSUMER_KEY_LABEL"
+                    description="MOD_PHZ_LATEST_MESSAGE_FOR_TWITTER_CONSUMER_KEY_DESC" />
+                <field
+                    name="consumer_secret"
+                    type="text"
+                    required="required"
+                    label="MOD_PHZ_LATEST_MESSAGE_FOR_TWITTER_CONSUMER_SECRET_LABEL"
+                    description="MOD_PHZ_LATEST_MESSAGE_FOR_TWITTER_CONSUMER_SECRET_DESC" />
+                <field
+                    name="user_id"
+                    type="text"
+                    required="required"
+                    label="MOD_PHZ_LATEST_MESSAGE_FOR_TWITTER_USER_ID_LABEL"
+                    description="MOD_PHZ_LATEST_MESSAGE_FOR_TWITTER_USER_ID_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
